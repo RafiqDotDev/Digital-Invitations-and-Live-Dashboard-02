@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"outline-variant":"#d1c5b5","inverse-surface":"#31302b","tertiary-fixed":"#ffdad6","on-primary-fixed":"#271900","tertiary-fixed-dim":"#ffb4ac","primary":"#755a23","secondary":"#3c684a","secondary-fixed":"#bdeec9","error-container":"#ffdad6","surface-variant":"#e6e2da","on-surface":"#1c1c17","background":"#fdf9f1","surface-dim":"#dddad2","surface-container-high":"#ece8e0","tertiary":"#9e403a","outline":"#7f7668","on-secondary-fixed":"#00210e","on-primary-fixed-variant":"#5b430d","surface-container-highest":"#e6e2da","surface-container":"#f1ede6","inverse-primary":"#e6c180","primary-fixed":"#ffdea6","on-secondary-fixed-variant":"#244f34","surface-container-low":"#f7f3eb","on-secondary-container":"#406c4e","on-primary-container":"#453000","surface-tint":"#755a23","secondary-fixed-dim":"#a2d2ae","on-error-container":"#93000a","secondary-container":"#bbebc6","error":"#ba1a1a","surface-bright":"#fdf9f1","on-tertiary-fixed-variant":"#7f2924","on-primary":"#ffffff","surface":"#fdf9f1","on-tertiary-container":"#641613","on-tertiary":"#ffffff","on-tertiary-fixed":"#410002","primary-container":"#b8975a","on-surface-variant":"#4d463a","inverse-on-surface":"#f4f0e8","primary-fixed-dim":"#e6c180","on-secondary":"#ffffff","on-error":"#ffffff","tertiary-container":"#ea7b71","on-background":"#1c1c17","surface-container-lowest":"#ffffff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"1.5rem","space-lg":"1.5rem","gutter-lg":"2rem","margin-mobile":"1rem","margin":"2rem","space-xs":"0.25rem","space-md":"1rem","space-sm":"0.5rem","space-xl":"2.5rem","margin-desktop":"3rem","gutter-sm":"1rem"},"fontFamily":{"headline-lg":["Playfair Display"],"body-sm":["Inter"],"label-sm":["Inter"],"label-md":["Inter"],"body-lg":["Inter"],"headline-xl-mobile":["Playfair Display"],"headline-sm":["Playfair Display"],"headline-md":["Playfair Display"],"headline-xl":["Playfair Display"],"body-md":["Inter"],"display-hero-mobile":["Playfair Display"],"code-sm":["Inter"],"display-hero":["Playfair Display"],"metric-number":["Playfair Display"]},"fontSize":{"headline-lg":["28px",{"lineHeight":"36px","fontWeight":"500"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.05em","fontWeight":"600"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"26px","fontWeight":"400"}],"headline-xl-mobile":["26px",{"lineHeight":"34px","fontWeight":"500"}],"headline-sm":["18px",{"lineHeight":"26px","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"30px","fontWeight":"500"}],"headline-xl":["36px",{"lineHeight":"44px","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}],"display-hero-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"600"}],"code-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}],"display-hero":["48px",{"lineHeight":"56px","letterSpacing":"-0.01em","fontWeight":"600"}],"metric-number":["36px",{"lineHeight":"40px","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[240px] bg-surface-container-lowest z-50 flex flex-col justify-between border-r border-outline-variant shadow-[0_4px_20px_-2px_rgba(184,151,90,0.06)]"><div class="flex flex-col"><div class="h-[72px] px-space-lg flex items-center gap-space-sm border-b border-outline-variant"><img alt="Live Guest Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPy8F2Qpw0zYrHn2vdCGKRYhJ2gmXC5HftKIUWBpO2-HUWwWKdAafIctSN94spx65AnHQqeWA_owtTT0tCJN0SQKbiDXF0tsiHlPSSFVAamDy2GuUlKnIKLUtLISoaaV7I0YmqQalGR9xu2EUbmDlTerIYy52SVe-LAJkb03suICGzHq4SgH4zGnYtwFQTJi4Q4Nqzf1z5Smp_j3JBZradIDxTCjlBDl3Yql8pvduEfbd5MCP1dVhwfw"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight">Live Guest</span></div><nav class="flex flex-col gap-1 px-space-sm py-space-lg" data-active-classes="bg-surface-container-low text-primary-container font-medium"><a aria-current="page" class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg transition-all duration-150 bg-surface-container-low text-primary-container font-medium" data-path="overview" href="#"><span class="material-symbols-outlined text-[20px]">dashboard</span><span class="font-label-md text-label-md">Overview</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all duration-150" data-path="guests" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-label-md text-label-md">Guests</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all duration-150" data-path="invitation" href="#"><span class="material-symbols-outlined text-[20px]">mail</span><span class="font-label-md text-label-md">Invitation</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all duration-150" data-path="form-settings" href="#"><span class="material-symbols-outlined text-[20px]">edit_note</span><span class="font-label-md text-label-md">Form settings</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all duration-150" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-md text-label-md">Settings</span></a></nav></div><div class="p-space-lg border-t border-outline-variant bg-surface-container-low/40"><div class="flex items-center gap-space-sm mb-1 text-primary"><span class="material-symbols-outlined text-[18px]">spa</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Luxury Suite</span></div><p class="font-code-sm text-code-sm text-outline">Live RSVP Engine • v2.4</p></div></aside><div class="pl-[240px]"><header class="fixed top-0 left-[240px] right-0 h-[72px] bg-surface-container-lowest/95 backdrop-blur-md border-b border-outline-variant shadow-[0_1px_3px_0_rgba(43,43,43,0.02)] z-40 px-gutter-lg flex items-center justify-between"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-2 rounded-lg border border-outline-variant cursor-pointer hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-primary text-[20px]">diamond</span><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-medium">Zara &amp; Adam — Sat, Dec 12, 2026</span></div><span class="material-symbols-outlined text-outline text-[18px]">expand_more</span></div><span class="inline-flex items-center px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container border border-secondary-fixed-dim"><span class="w-1.5 h-1.5 rounded-full bg-secondary mr-1.5 animate-pulse"></span>Live &amp; Collecting</span></div><div class="flex items-center gap-space-lg"><div class="hidden xl:flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-low border border-outline-variant"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span></span><span class="font-label-sm text-label-sm text-on-surface-variant">RSVP Stream Active</span></div><div class="inline-flex items-center p-0.5 rounded-full bg-surface-container-low border border-outline-variant"><button class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-primary border border-outline-variant shadow-sm font-semibold" type="button">EN</button><button class="px-2.5 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors font-medium" type="button">اردو</button></div><button class="relative p-2 text-on-surface-variant hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-tertiary text-on-tertiary font-label-sm text-[10px]">3</span></button><div class="flex items-center gap-space-sm pl-space-md border-l border-outline-variant"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiq5LFoucZ14wv2a4nVv5kLX9usyWWQzsAJHU3YnMRv8eONz2tlzH4o2Q1XgL_2wV2mNI9xT_sxV_DbSaIiUMmuYH6AsTRqPs6esnAXwlG9iaeOZLScpCcvsnPfuMSBQpNAdvWpaCA5ATM5VKprmero6op9sDAbb3idvxU5sRXR11bk_ZoAAF9WR-Fu8p0lh-r68nOf7_pj61vzvaeywU0c7_UvW4XD4kHThoHy2UInMKApzDvl-_kLg"/><div class="hidden sm:flex flex-col"><span class="font-label-md text-label-md font-medium text-on-surface leading-none mb-0.5">Sarah Jensen</span><span class="font-label-sm text-label-sm text-outline leading-none">Hall Director</span></div><span class="material-symbols-outlined text-outline text-[18px]">unfold_more</span></div></div></header><main class="w-full pt-[72px] min-h-screen bg-background"><div class="flex flex-col w-full">
+<div class="px-gutter-lg py-space-xl max-w-[1440px] mx-auto w-full space-y-space-xl">
+<!-- Header Section -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg">
+<div class="space-y-space-xs">
+<div class="flex items-center gap-2">
+<span class="inline-block w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Real-Time Guest Operations</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Guest Directory &amp; RSVPs</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Zara and Adam, Saturday 12 December 2026 <span class="text-outline-variant mx-1">•</span> 180 Total Invited <span class="text-outline-variant mx-1">•</span> 48 Families / Parties
+        </p>
+</div>
+<!-- Quick Metrics Strip -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-3 bg-surface-container-low p-2 rounded-xl shadow-sm">
+<div class="bg-surface-container-lowest px-4 py-2.5 rounded-lg flex flex-col justify-center min-w-[110px] shadow-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Invited</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-sm text-headline-sm text-on-surface">180</span>
+<span class="font-label-sm text-label-sm text-outline">pax</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest px-4 py-2.5 rounded-lg flex flex-col justify-center min-w-[110px] shadow-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Confirmed</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-sm text-headline-sm text-secondary">126</span>
+<span class="font-label-sm text-label-sm text-secondary/70">70%</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest px-4 py-2.5 rounded-lg flex flex-col justify-center min-w-[110px] shadow-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Awaiting</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-sm text-headline-sm text-primary">40</span>
+<span class="font-label-sm text-label-sm text-primary/70">22%</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest px-4 py-2.5 rounded-lg flex flex-col justify-center min-w-[110px] shadow-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-tertiary">Declined</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-sm text-headline-sm text-tertiary">14</span>
+<span class="font-label-sm text-label-sm text-tertiary/70">8%</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Visual Progress & Editorial Accent Bar -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md w-full sm:w-auto">
+<div class="h-10 w-10 rounded-full bg-surface-container-low flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined text-[20px]">how_to_reg</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">Acceptance Target on Track</span>
+<span class="font-body-sm text-body-sm text-outline">Reception hall baseline configured for 140 guaranteed plates</span>
+</div>
+</div>
+<div class="w-full sm:w-72 flex flex-col gap-1.5">
+<div class="flex justify-between items-center text-label-sm font-label-sm">
+<span class="text-on-surface-variant font-medium">Capacity Reached</span>
+<span class="text-primary font-semibold">70.0%</span>
+</div>
+<div class="h-2 w-full bg-surface-container-low rounded-full overflow-hidden flex">
+<div class="bg-secondary h-full" style="width: 70%"></div>
+<div class="bg-primary-container h-full" style="width: 22.2%"></div>
+<div class="bg-tertiary-container h-full" style="width: 7.8%"></div>
+</div>
+</div>
+</div>
+<!-- Search, Filters, and Actions Toolbar -->
+<div class="flex flex-col xl:flex-row items-stretch xl:items-center justify-between gap-space-md">
+<!-- Search Input -->
+<div class="relative flex-1 min-w-[280px] max-w-md">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-outline text-[20px]">search</span>
+<input class="w-full pl-10 pr-4 py-2.5 bg-surface-container-lowest rounded-lg font-body-sm text-body-sm text-on-surface placeholder:text-outline shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-container/40 transition-all" placeholder="Search family, guest name, or phone..." type="text"/>
+</div>
+<!-- Quick Filter Pills -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 xl:pb-0 scrollbar-none">
+<div class="relative shrink-0">
+<button class="inline-flex items-center gap-1.5 px-3 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface shadow-sm hover:bg-surface-container-low transition-colors" type="button">
+<span>All Events</span>
+<span class="material-symbols-outlined text-[16px] text-outline">expand_more</span>
+</button>
+</div>
+<div class="relative shrink-0">
+<button class="inline-flex items-center gap-1.5 px-3 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface shadow-sm hover:bg-surface-container-low transition-colors" type="button">
+<span>Status: All</span>
+<span class="material-symbols-outlined text-[16px] text-outline">expand_more</span>
+</button>
+</div>
+<div class="relative shrink-0">
+<button class="inline-flex items-center gap-1.5 px-3 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface shadow-sm hover:bg-surface-container-low transition-colors" type="button">
+<span>Side: All</span>
+<span class="material-symbols-outlined text-[16px] text-outline">expand_more</span>
+</button>
+</div>
+<button class="shrink-0 px-3 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant hover:text-on-surface shadow-sm hover:bg-surface-container-low transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary-container">restaurant</span>
+<span>Dietary</span>
+</button>
+<button class="shrink-0 px-3 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant hover:text-on-surface shadow-sm hover:bg-surface-container-low transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">airport_shuttle</span>
+<span>Needs pickup</span>
+</button>
+<button class="shrink-0 px-3 py-2 rounded-full font-label-md text-label-md bg-surface-container-lowest text-on-surface-variant hover:text-on-surface shadow-sm hover:bg-surface-container-low transition-colors flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px] text-outline">hotel</span>
+<span>Needs room</span>
+</button>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg font-label-md text-label-md bg-surface-container-lowest text-primary hover:bg-surface-container-low shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">file_upload</span>
+<span>Import CSV</span>
+</button>
+<button class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-lg font-label-md text-label-md bg-primary-container text-on-primary hover:bg-primary shadow-sm hover:shadow-md transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>+ Add family</span>
+</button>
+</div>
+</div>
+<!-- Main Table Card -->
+<div class="bg-surface-container-lowest rounded-xl shadow-md overflow-hidden flex flex-col">
+<!-- Bulk Action Glance Bar (Conditional indicator) -->
+<div class="bg-surface-container-low px-space-lg py-2.5 flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-space-md">
+<label class="flex items-center gap-2 cursor-pointer select-none">
+<input class="w-4 h-4 rounded text-primary-container accent-primary-container cursor-pointer" id="selectAllCheckbox" type="checkbox"/>
+<span class="font-label-md text-label-md text-on-surface font-medium">Select All Families</span>
+</label>
+<span class="text-outline text-label-sm font-label-sm hidden sm:inline">•</span>
+<span class="text-outline text-label-sm font-label-sm hidden sm:inline" id="selectedCountDisplay">0 parties selected</span>
+</div>
+<div class="flex items-center gap-space-md">
+<button class="text-primary hover:underline font-label-md text-label-md flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">mail</span>
+<span>Broadcast Reminder</span>
+</button>
+<span class="text-outline text-label-sm font-label-sm">•</span>
+<button class="text-primary hover:underline font-label-md text-label-md flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">file_download</span>
+<span>Export View</span>
+</button>
+</div>
+</div>
+<!-- Responsive Table Container -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low/50">
+<th class="py-3.5 pl-space-lg pr-2 w-12" scope="col">
+<span class="sr-only">Row Selection</span>
+</th>
+<th class="py-3.5 px-4 font-label-sm text-label-sm uppercase tracking-wider text-outline" scope="col">Family / Contact</th>
+<th class="py-3.5 px-4 font-label-sm text-label-sm uppercase tracking-wider text-outline" scope="col">Side</th>
+<th class="py-3.5 px-3 font-label-sm text-label-sm uppercase tracking-wider text-outline text-center" scope="col">Inv.</th>
+<th class="py-3.5 px-3 font-label-sm text-label-sm uppercase tracking-wider text-outline text-center" scope="col">Att.</th>
+<th class="py-3.5 px-4 font-label-sm text-label-sm uppercase tracking-wider text-outline" scope="col">Events</th>
+<th class="py-3.5 px-4 font-label-sm text-label-sm uppercase tracking-wider text-outline" scope="col">Status</th>
+<th class="py-3.5 px-4 font-label-sm text-label-sm uppercase tracking-wider text-outline" scope="col">Last Reply</th>
+<th class="py-3.5 pr-space-lg pl-4 font-label-sm text-label-sm uppercase tracking-wider text-outline text-right" scope="col">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low text-body-md font-body-md text-on-surface">
+<!-- Row 1: Khan Family -->
+<tr class="hover:bg-surface-container-low/40 transition-colors group bg-surface-container-low">
+<td class="py-4 pl-space-lg pr-2">
+<input checked="checked" class="row-checkbox w-4 h-4 rounded text-primary-container accent-primary-container cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[16px] text-on-surface font-semibold group-hover:text-primary transition-colors">Khan Family</span>
+<span class="font-body-sm text-body-sm text-outline">Tariq &amp; Aisha Khan</span>
+<div class="flex items-center gap-1.5 mt-1.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-surface-container-low text-outline">
+<span class="material-symbols-outlined text-[13px] text-primary">restaurant</span> Halal (6)
+                    </span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-low text-primary-container font-medium">Bride</span>
+</td>
+<td class="py-4 px-3 text-center font-metric-number text-[20px] text-on-surface">6</td>
+<td class="py-4 px-3 text-center font-metric-number text-[20px] text-secondary font-medium">6</td>
+<td class="py-4 px-4">
+<div class="flex flex-wrap gap-1 max-w-[200px]">
+<span class="px-2 py-0.5 rounded-md text-label-sm font-label-sm bg-surface-container-low text-on-surface-variant">Dinner</span>
+<span class="px-2 py-0.5 rounded-md text-label-sm font-label-sm bg-surface-container-low text-on-surface-variant">Ceremony</span>
+<span class="px-2 py-0.5 rounded-md text-label-sm font-label-sm bg-surface-container-low text-on-surface-variant">Reception</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Confirmed
+                </span>
+</td>
+<td class="py-4 px-4 whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface">12 mins ago</span>
+<span class="font-label-sm text-label-sm text-outline">via Portal</span>
+</div>
+</td>
+<td class="py-4 pr-space-lg pl-4 text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-1">
+<button class="p-2 rounded-lg text-outline hover:text-primary hover:bg-surface-container-low transition-colors" title="Copy Unique Invitation Link" type="button">
+<span class="material-symbols-outlined text-[18px]">link</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg text-label-sm font-label-sm text-primary hover:bg-surface-container-low font-medium transition-colors" type="button">
+                    Details
+                  </button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Mansoor Family -->
+<tr class="hover:bg-surface-container-low/40 transition-colors group">
+<td class="py-4 pl-space-lg pr-2">
+<input class="row-checkbox w-4 h-4 rounded text-primary-container accent-primary-container cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[16px] text-on-surface font-semibold group-hover:text-primary transition-colors">Mansoor Family</span>
+<span class="font-body-sm text-body-sm text-outline">Dr. Farhan Mansoor</span>
+<div class="flex items-center gap-1.5 mt-1.5 flex-wrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-surface-container-low text-outline">
+<span class="material-symbols-outlined text-[13px] text-primary">restaurant</span> Halal (4)
+                    </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-tertiary-fixed text-on-tertiary-fixed-variant">
+<span class="material-symbols-outlined text-[13px] text-tertiary">warning</span> Nut Allergy
+                    </span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-low text-outline font-medium">Groom</span>
+</td>
+<td class="py-4 px-3 text-center font-metric-number text-[20px] text-on-surface">4</td>
+<td class="py-4 px-3 text-center font-metric-number text-[20px] text-secondary font-medium">4</td>
+<td class="py-4 px-4">
+<div class="flex flex-wrap gap-1 max-w-[200px]">
+<span class="px-2 py-0.5 rounded-md text-label-sm font-label-sm bg-surface-container-low text-on-surface-variant">Ceremony</span>
+<span class="px-2 py-0.5 rounded-md text-label-sm font-label-sm bg-surface-container-low text-on-surface-variant">Reception</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Confirmed
+                </span>
+</td>
+<td class="py-4 px-4 whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface">2 hours ago</span>
+<span class="font-label-sm text-label-sm text-outline">via SMS Link</span>
+</div>
+</td>
+<td class="py-4 pr-space-lg pl-4 text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-1">
+<button class="p-2 rounded-lg text-outline hover:text-primary hover:bg-surface-container-low transition-colors" title="Copy Unique Invitation Link" type="button">
+<span class="material-symbols-outlined text-[18px]">link</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg text-label-sm font-label-sm text-primary hover:bg-surface-container-low font-medium transition-colors" type="button">
+                    Details
+                  </button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Vance-Qureshi Family -->
+<tr class="hover:bg-surface-container-low/40 transition-colors group">
+<td class="py-4 pl-space-lg pr-2">
+<input class="row-checkbox w-4 h-4 rounded text-primary-container accent-primary-container cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[16px] text-on-surface font-semibold group-hover:text-primary transition-colors">Vance-Qureshi Family</span>
+<span class="font-body-sm text-body-sm text-outline">Elena Vance &amp; Daniyal Qureshi</span>
+<div class="flex items-center gap-1.5 mt-1.5 flex-wrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-surface-container-low text-secondary">
+<span class="material-symbols-outlined text-[13px]">airport_shuttle</span> Needs pickup
+                    </span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-surface-container-low text-outline">
+<span class="material-symbols-outlined text-[13px]">hotel</span> Suite Booked (2 Rms)
+                    </span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-low text-primary-container font-medium">Bride</span>
+</td>
+<td class="py-4 px-3 text-center font-metric-number text-[20px] text-on-surface">5</td>
+<td class="py-4 px-3 text-center font-metric-number text-[20px] text-secondary font-medium">4</td>
+<td class="py-4 px-4">
+<div class="flex flex-wrap gap-1 max-w-[200px]">
+<span class="px-2 py-0.5 rounded-md text-label-sm font-label-sm bg-surface-container-low text-on-surface-variant">Dinner</span>
+<span class="px-2 py-0.5 rounded-md text-label-sm font-label-sm bg-surface-container-low text-on-surface-variant">Ceremony</span>
+<span class="px-2 py-0.5 rounded-md text-label-sm font-label-sm bg-surface-container-low text-on-surface-variant">Reception</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Confirmed
+                </span>
+</td>
+<td class="py-4 px-4 whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface">Yesterday</span>
+<span class="font-label-sm text-label-sm text-outline">1 Declined</span>
+</div>
+</td>
+<td class="py-4 pr-space-lg pl-4 text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-1">
+<button class="p-2 rounded-lg text-outline hover:text-primary hover:bg-surface-container-low transition-colors" title="Copy Unique Invitation Link" type="button">
+<span class="material-symbols-outlined text-[18px]">link</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg text-label-sm font-label-sm text-primary hover:bg-surface-container-low font-medium transition-colors" type="button">
+                    Details
+                  </button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Siddiqui Family -->
+<tr class="hover:bg-surface-container-low/40 transition-colors group">
+<td class="py-4 pl-space-lg pr-2">
+<input class="row-checkbox w-4 h-4 rounded text-primary-container accent-primary-container cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[16px] text-on-surface font-semibold group-hover:text-primary transition-colors">Siddiqui Family</span>
+<span class="font-body-sm text-body-sm text-outline">Zia &amp; Rehana Siddiqui</span>
+<div class="flex items-center gap-1.5 mt-1.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-surface-container-low text-outline">
+<span class="material-symbols-outlined text-[13px] text-primary">eco</span> Vegetarian (2)
+                    </span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-low text-outline font-medium">Groom</span>
+</td>
+<td class="py-4 px-3 text-center font-metric-number text-[20px] text-on-surface">8</td>
+<td class="py-4 px-3 text-center font-metric-number text-[20px] text-secondary font-medium">6</td>
+<td class="py-4 px-4">
+<div class="flex flex-wrap gap-1 max-w-[200px]">
+<span class="px-2 py-0.5 rounded-md text-label-sm font-label-sm bg-surface-container-low text-on-surface-variant">Dinner</span>
+<span class="px-2 py-0.5 rounded-md text-label-sm font-label-sm bg-surface-container-low text-on-surface-variant">Ceremony</span>
+<span class="px-2 py-0.5 rounded-md text-label-sm font-label-sm bg-surface-container-low text-on-surface-variant">Reception</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Confirmed
+                </span>
+</td>
+<td class="py-4 px-4 whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface">Yesterday</span>
+<span class="font-label-sm text-label-sm text-outline">via Portal</span>
+</div>
+</td>
+<td class="py-4 pr-space-lg pl-4 text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-1">
+<button class="p-2 rounded-lg text-outline hover:text-primary hover:bg-surface-container-low transition-colors" title="Copy Unique Invitation Link" type="button">
+<span class="material-symbols-outlined text-[18px]">link</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg text-label-sm font-label-sm text-primary hover:bg-surface-container-low font-medium transition-colors" type="button">
+                    Details
+                  </button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Laurent Family -->
+<tr class="hover:bg-surface-container-low/40 transition-colors group">
+<td class="py-4 pl-space-lg pr-2">
+<input class="row-checkbox w-4 h-4 rounded text-primary-container accent-primary-container cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[16px] text-on-surface font-semibold group-hover:text-primary transition-colors">Laurent Family</span>
+<span class="font-body-sm text-body-sm text-outline">Sophie &amp; Marc Laurent</span>
+<div class="flex items-center gap-1.5 mt-1.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-surface-container-low text-outline">
+<span class="material-symbols-outlined text-[13px] text-secondary">psychiatry</span> Vegan (2)
+                    </span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-low text-primary-container font-medium">Bride</span>
+</td>
+<td class="py-4 px-3 text-center font-metric-number text-[20px] text-on-surface">2</td>
+<td class="py-4 px-3 text-center font-metric-number text-[20px] text-secondary font-medium">2</td>
+<td class="py-4 px-4">
+<div class="flex flex-wrap gap-1 max-w-[200px]">
+<span class="px-2 py-0.5 rounded-md text-label-sm font-label-sm bg-surface-container-low text-on-surface-variant">Ceremony</span>
+<span class="px-2 py-0.5 rounded-md text-label-sm font-label-sm bg-surface-container-low text-on-surface-variant">Reception</span>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Confirmed
+                </span>
+</td>
+<td class="py-4 px-4 whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface">3 days ago</span>
+<span class="font-label-sm text-label-sm text-outline">via WhatsApp</span>
+</div>
+</td>
+<td class="py-4 pr-space-lg pl-4 text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-1">
+<button class="p-2 rounded-lg text-outline hover:text-primary hover:bg-surface-container-low transition-colors" title="Copy Unique Invitation Link" type="button">
+<span class="material-symbols-outlined text-[18px]">link</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg text-label-sm font-label-sm text-primary hover:bg-surface-container-low font-medium transition-colors" type="button">
+                    Details
+                  </button>
+</div>
+</td>
+</tr>
+<!-- Row 6: Chaudhry Family -->
+<tr class="hover:bg-surface-container-low/40 transition-colors group">
+<td class="py-4 pl-space-lg pr-2">
+<input class="row-checkbox w-4 h-4 rounded text-primary-container accent-primary-container cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[16px] text-on-surface font-semibold group-hover:text-primary transition-colors">Chaudhry Family</span>
+<span class="font-body-sm text-body-sm text-outline">Haroon Chaudhry</span>
+<div class="flex items-center gap-1.5 mt-1.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-primary-fixed text-on-primary-fixed-variant">
+<span class="material-symbols-outlined text-[13px] text-primary">schedule_send</span> Auto-reminder: 48h
+                    </span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-low text-outline font-medium">Groom</span>
+</td>
+<td class="py-4 px-3 text-center font-metric-number text-[20px] text-on-surface">5</td>
+<td class="py-4 px-3 text-center font-metric-number text-[20px] text-outline">0</td>
+<td class="py-4 px-4">
+<span class="text-label-sm font-label-sm text-outline italic">Pending selection</span>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed-variant font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                  Pending
+                </span>
+</td>
+<td class="py-4 px-4 whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface">Sent 4 days ago</span>
+<span class="font-label-sm text-label-sm text-outline">Not yet opened</span>
+</div>
+</td>
+<td class="py-4 pr-space-lg pl-4 text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-1">
+<button class="p-2 rounded-lg text-outline hover:text-primary hover:bg-surface-container-low transition-colors" title="Send Direct Ping" type="button">
+<span class="material-symbols-outlined text-[18px]">forward_to_inbox</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg text-label-sm font-label-sm text-primary hover:bg-surface-container-low font-medium transition-colors" type="button">
+                    Details
+                  </button>
+</div>
+</td>
+</tr>
+<!-- Row 7: Kapoor & Malhotra Family -->
+<tr class="hover:bg-surface-container-low/40 transition-colors group">
+<td class="py-4 pl-space-lg pr-2">
+<input class="row-checkbox w-4 h-4 rounded text-primary-container accent-primary-container cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[16px] text-on-surface font-semibold group-hover:text-primary transition-colors">Kapoor &amp; Malhotra</span>
+<span class="font-body-sm text-body-sm text-outline">Vikram Kapoor &amp; Ananya Malhotra</span>
+<div class="flex items-center gap-1.5 mt-1.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-surface-container-low text-outline">
+<span class="material-symbols-outlined text-[13px] text-primary">visibility</span> Viewed yesterday
+                    </span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-low text-primary-container font-medium">Bride</span>
+</td>
+<td class="py-4 px-3 text-center font-metric-number text-[20px] text-on-surface">4</td>
+<td class="py-4 px-3 text-center font-metric-number text-[20px] text-outline">0</td>
+<td class="py-4 px-4">
+<span class="text-label-sm font-label-sm text-outline italic">Pending selection</span>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed-variant font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                  Pending
+                </span>
+</td>
+<td class="py-4 px-4 whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface">Opened 18h ago</span>
+<span class="font-label-sm text-label-sm text-outline">In progress</span>
+</div>
+</td>
+<td class="py-4 pr-space-lg pl-4 text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-1">
+<button class="p-2 rounded-lg text-outline hover:text-primary hover:bg-surface-container-low transition-colors" title="Copy Unique Invitation Link" type="button">
+<span class="material-symbols-outlined text-[18px]">link</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg text-label-sm font-label-sm text-primary hover:bg-surface-container-low font-medium transition-colors" type="button">
+                    Details
+                  </button>
+</div>
+</td>
+</tr>
+<!-- Row 8: Sterling-Baig Family -->
+<tr class="hover:bg-surface-container-low/40 transition-colors group">
+<td class="py-4 pl-space-lg pr-2">
+<input class="row-checkbox w-4 h-4 rounded text-primary-container accent-primary-container cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-4 px-4">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[16px] text-on-surface font-semibold group-hover:text-primary transition-colors">Sterling-Baig Family</span>
+<span class="font-body-sm text-body-sm text-outline">Arthur &amp; Parveen Sterling</span>
+<div class="flex items-center gap-1.5 mt-1.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-label-sm font-label-sm bg-tertiary-fixed text-on-tertiary-fixed-variant">
+<span class="material-symbols-outlined text-[13px] text-tertiary">favorite</span> Note: Sent blessings
+                    </span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-low text-outline font-medium">Groom</span>
+</td>
+<td class="py-4 px-3 text-center font-metric-number text-[20px] text-on-surface">3</td>
+<td class="py-4 px-3 text-center font-metric-number text-[20px] text-tertiary font-medium">0</td>
+<td class="py-4 px-4">
+<span class="text-label-sm font-label-sm text-outline">—</span>
+</td>
+<td class="py-4 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-tertiary-fixed text-on-tertiary-fixed-variant font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+                  Declined
+                </span>
+</td>
+<td class="py-4 px-4 whitespace-nowrap">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface">5 days ago</span>
+<span class="font-label-sm text-label-sm text-outline">Regrets received</span>
+</div>
+</td>
+<td class="py-4 pr-space-lg pl-4 text-right whitespace-nowrap">
+<div class="inline-flex items-center gap-1">
+<button class="p-2 rounded-lg text-outline hover:text-primary hover:bg-surface-container-low transition-colors" title="Copy Unique Invitation Link" type="button">
+<span class="material-symbols-outlined text-[18px]">link</span>
+</button>
+<button class="px-3 py-1.5 rounded-lg text-label-sm font-label-sm text-primary hover:bg-surface-container-low font-medium transition-colors" type="button">
+                    Details
+                  </button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination Footer -->
+<div class="px-space-lg py-space-md bg-surface-container-low/40 flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="font-body-sm text-body-sm text-outline">
+          Showing <span class="font-medium text-on-surface">1</span> to <span class="font-medium text-on-surface">8</span> of <span class="font-medium text-on-surface">48</span> families (180 total guests)
+        </div>
+<nav aria-label="Pagination" class="inline-flex items-center gap-1">
+<button class="px-3 py-1.5 rounded-lg text-label-md font-label-md text-outline hover:text-on-surface hover:bg-surface-container-lowest transition-colors flex items-center gap-1" disabled="" type="button">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+<span>Previous</span>
+</button>
+<button aria-current="page" class="w-8 h-8 rounded-lg text-label-md font-label-md bg-primary-container text-on-primary font-semibold flex items-center justify-center shadow-sm" type="button">
+            1
+          </button>
+<button class="w-8 h-8 rounded-lg text-label-md font-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest transition-colors flex items-center justify-center" type="button">
+            2
+          </button>
+<button class="w-8 h-8 rounded-lg text-label-md font-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest transition-colors flex items-center justify-center" type="button">
+            3
+          </button>
+<button class="w-8 h-8 rounded-lg text-label-md font-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest transition-colors flex items-center justify-center" type="button">
+            4
+          </button>
+<button class="w-8 h-8 rounded-lg text-label-md font-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest transition-colors flex items-center justify-center" type="button">
+            5
+          </button>
+<button class="w-8 h-8 rounded-lg text-label-md font-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest transition-colors flex items-center justify-center" type="button">
+            6
+          </button>
+<button class="px-3 py-1.5 rounded-lg text-label-md font-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest transition-colors flex items-center gap-1" type="button">
+<span>Next</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</nav>
+</div>
+</div>
+<!-- Editorial Hospitality Card & Venue Floorplan Connection -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<div class="lg:col-span-2 bg-surface-container-lowest p-space-lg rounded-xl shadow-md flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Operational Intelligence</span>
+<span class="font-code-sm text-code-sm text-secondary bg-secondary-container px-2 py-0.5 rounded-full font-semibold">94% Response Velocity</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Dietary &amp; Logistics Overview</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Halal certificates have been cross-verified with Grand Pavilion catering. 4 guest parties have requested hotel accommodations at the Mayfair Suite wing with shuttle requirements.
+          </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md mt-space-lg pt-space-md bg-surface-container-low/40 -mx-space-lg -mb-space-lg p-space-lg rounded-b-xl">
+<div>
+<span class="font-label-sm text-label-sm text-outline">Strict Halal</span>
+<div class="font-headline-sm text-headline-sm text-on-surface mt-0.5">142 meals</div>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline">Vegetarian / Vegan</span>
+<div class="font-headline-sm text-headline-sm text-on-surface mt-0.5">24 meals</div>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline">Airport Pickups</span>
+<div class="font-headline-sm text-headline-sm text-on-surface mt-0.5">7 Groups</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-md flex flex-col justify-between">
+<div class="space-y-space-sm">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Seating Harmonizer</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Unassigned Guests</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            18 confirmed guests are not yet designated to tables at the Reception Ballroom.
+          </p>
+</div>
+<div class="mt-space-lg">
+<button class="w-full py-2.5 px-4 rounded-lg bg-surface-container-low hover:bg-surface-container text-primary font-label-md text-label-md font-medium flex items-center justify-center gap-2 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">table_restaurant</span>
+<span>Open Table Seating Planner</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive JavaScript: Highlight Active Nav & Row Selection Logic -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Highlight 'Guests' in the persistent app shell sidebar
+      const navLinks = document.querySelectorAll('aside nav a');
+      navLinks.forEach(link => {
+        const path = link.getAttribute('data-path');
+        if (path === 'guests') {
+          link.classList.remove('text-on-surface-variant');
+          link.classList.add('bg-surface-container-low', 'text-primary-container', 'font-medium');
+        } else {
+          link.classList.remove('bg-surface-container-low', 'text-primary-container', 'font-medium');
+          link.classList.add('text-on-surface-variant');
+        }
+      });
+
+      // 2. Select All and individual checkbox state handling
+      const selectAll = document.getElementById('selectAllCheckbox');
+      const rowCheckboxes = document.querySelectorAll('.row-checkbox');
+      const countDisplay = document.getElementById('selectedCountDisplay');
+
+      function updateSelectedCount() {
+        const checkedCount = document.querySelectorAll('.row-checkbox:checked').length;
+        if (countDisplay) {
+          countDisplay.textContent = `${checkedCount} part${checkedCount === 1 ? 'y' : 'ies'} selected`;
+        }
+        if (selectAll) {
+          selectAll.checked = checkedCount > 0 && checkedCount === rowCheckboxes.length;
+          selectAll.indeterminate = checkedCount > 0 && checkedCount < rowCheckboxes.length;
+        }
+      }
+
+      if (selectAll) {
+        selectAll.addEventListener('change', (e) => {
+          rowCheckboxes.forEach(cb => {
+            cb.checked = e.target.checked;
+          });
+          updateSelectedCount();
+        });
+      }
+
+      rowCheckboxes.forEach(cb => {
+        cb.addEventListener('change', updateSelectedCount);
+      });
+    });
+  </script>
+</div><div class="fixed inset-0 z-50 flex justify-end overflow-hidden" id="party-details-drawer-wrapper"><div class="fixed inset-0 bg-[#1c1c17]/40 backdrop-blur-[2px] transition-opacity duration-200"></div><aside class="relative z-10 w-full max-w-[540px] h-full bg-[#fdf9f1] border-l border-[#d1c5b5] shadow-2xl flex flex-col justify-between overflow-hidden"><div class="p-space-lg border-b border-[#d1c5b5] bg-surface-container-lowest/90 backdrop-blur-md shrink-0"><div class="flex items-start justify-between gap-3"><div class="flex-1"><div class="flex items-center gap-2 mb-1"><span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container border border-secondary-fixed-dim font-medium"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>Confirmed</span><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Party #01</span></div><h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Khan Family</h2><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Tariq &amp; Aisha Khan • Bride's Side • 6 Guests</p></div><button aria-label="Close Drawer" class="p-2 -mr-2 -mt-2 rounded-lg text-outline hover:text-on-surface hover:bg-surface-container-low transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">close</span></button></div><div class="mt-3 pt-3 border-t border-outline-variant"><label class="font-label-sm text-label-sm uppercase tracking-wider text-outline block mb-1.5">Personalized Guest RSVP Link</label><div class="flex items-center gap-2"><div class="flex-1 flex items-center bg-surface-container-low px-3 py-1.5 rounded-lg border border-outline-variant font-code-sm text-code-sm text-on-surface-variant overflow-hidden"><span class="material-symbols-outlined text-[16px] text-primary-container mr-1.5 shrink-0">link</span><span class="truncate select-all">invite.example.com/zara-adam/khan-782</span></div><button class="px-3 py-1.5 rounded-lg font-label-sm text-label-sm bg-surface-container-lowest border border-outline-variant text-on-surface hover:bg-surface-container-low shadow-sm transition-colors shrink-0" type="button">Copy Link</button><button class="px-3 py-1.5 rounded-lg font-label-sm text-label-sm bg-primary-container hover:bg-primary text-on-primary shadow-sm flex items-center gap-1 transition-colors shrink-0" type="button"><span class="material-symbols-outlined text-[15px]">send</span><span>SMS / WA</span></button></div></div></div><div class="flex-1 overflow-y-auto p-space-lg space-y-space-lg scrollbar-none"><section class="space-y-2"><div class="flex items-center justify-between"><h3 class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Events Attending</h3><span class="font-label-sm text-label-sm text-secondary font-semibold">3 of 3 Confirmed</span></div><div class="grid grid-cols-1 gap-2"><div class="p-3 rounded-lg bg-surface-container-lowest border border-outline-variant shadow-sm flex items-center justify-between"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-primary text-[20px]">dinner_dining</span><div><span class="font-label-md text-label-md text-on-surface font-medium block">Welcome Dinner</span><span class="font-body-sm text-[12px] text-outline">Dec 11, 7:30 PM • Grand Terrace</span></div></div><span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-medium">6 Attending</span></div><div class="p-3 rounded-lg bg-surface-container-lowest border border-outline-variant shadow-sm flex items-center justify-between"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-primary text-[20px]">church</span><div><span class="font-label-md text-label-md text-on-surface font-medium block">The Ceremony</span><span class="font-body-sm text-[12px] text-outline">Dec 12, 11:30 AM • Sunken Pavilion</span></div></div><span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-medium">6 Attending</span></div><div class="p-3 rounded-lg bg-surface-container-lowest border border-outline-variant shadow-sm flex items-center justify-between"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-primary text-[20px]">celebration</span><div><span class="font-label-md text-label-md text-on-surface font-medium block">Crystal Ballroom Reception</span><span class="font-body-sm text-[12px] text-outline">Dec 12, 6:00 PM • Main Ballroom</span></div></div><span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-medium">6 Attending</span></div></div></section><section class="space-y-2"><div class="flex items-center justify-between"><h3 class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Guests (6)</h3><span class="font-code-sm text-code-sm text-primary">4 Adults • 2 Children</span></div><div class="divide-y divide-outline-variant bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm overflow-hidden"><div class="p-3 flex items-start justify-between gap-2"><div class="flex flex-col"><div class="flex items-center gap-2"><span class="font-label-md text-label-md text-on-surface font-semibold">1. Tariq Khan</span><span class="px-1.5 py-0.2 rounded text-[10px] font-label-sm bg-surface-container-low text-outline">Adult</span></div><div class="flex flex-wrap items-center gap-2 mt-1 text-[12px] text-on-surface-variant"><span class="inline-flex items-center gap-1 text-primary"><span class="material-symbols-outlined text-[13px]">restaurant</span> Halal</span><span>•</span><span class="text-outline">Drink: Non-alcoholic (Mocktail)</span></div></div><span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span></div><div class="p-3 flex items-start justify-between gap-2"><div class="flex flex-col"><div class="flex items-center gap-2"><span class="font-label-md text-label-md text-on-surface font-semibold">2. Aisha Khan</span><span class="px-1.5 py-0.2 rounded text-[10px] font-label-sm bg-surface-container-low text-outline">Adult</span></div><div class="flex flex-wrap items-center gap-2 mt-1 text-[12px] text-on-surface-variant"><span class="inline-flex items-center gap-1 text-primary"><span class="material-symbols-outlined text-[13px]">restaurant</span> Halal, Gluten-free</span><span>•</span><span class="text-outline">Drink: Non-alcoholic</span></div></div><span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span></div><div class="p-3 flex items-start justify-between gap-2"><div class="flex flex-col"><div class="flex items-center gap-2"><span class="font-label-md text-label-md text-on-surface font-semibold">3. Bilal Khan</span><span class="px-1.5 py-0.2 rounded text-[10px] font-label-sm bg-surface-container-low text-outline">Adult (24)</span></div><div class="flex flex-wrap items-center gap-2 mt-1 text-[12px] text-on-surface-variant"><span class="inline-flex items-center gap-1 text-primary"><span class="material-symbols-outlined text-[13px]">restaurant</span> Halal</span><span>•</span><span class="text-outline">Drink: Wine &amp; Cocktails</span></div></div><span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span></div><div class="p-3 flex items-start justify-between gap-2"><div class="flex flex-col"><div class="flex items-center gap-2"><span class="font-label-md text-label-md text-on-surface font-semibold">4. Zainab Khan</span><span class="px-1.5 py-0.2 rounded text-[10px] font-label-sm bg-surface-container-low text-outline">Adult (21)</span></div><div class="flex flex-wrap items-center gap-2 mt-1 text-[12px] text-on-surface-variant"><span class="inline-flex items-center gap-1 text-primary"><span class="material-symbols-outlined text-[13px]">restaurant</span> Halal, Vegetarian</span><span>•</span><span class="text-outline">Drink: Mocktail</span></div></div><span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span></div><div class="p-3 flex items-start justify-between gap-2"><div class="flex flex-col"><div class="flex items-center gap-2"><span class="font-label-md text-label-md text-on-surface font-semibold">5. Hamza Khan</span><span class="px-1.5 py-0.2 rounded text-[10px] font-label-sm bg-surface-container-low text-outline">Child (10)</span></div><div class="flex flex-wrap items-center gap-2 mt-1 text-[12px] text-on-surface-variant"><span class="inline-flex items-center gap-1 text-secondary"><span class="material-symbols-outlined text-[13px]">child_care</span> Halal Kids Meal</span><span>•</span><span class="text-outline">Drink: Fruit Juice</span></div></div><span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span></div><div class="p-3 flex items-start justify-between gap-2"><div class="flex flex-col"><div class="flex items-center gap-2"><span class="font-label-md text-label-md text-on-surface font-semibold">6. Maryam Khan</span><span class="px-1.5 py-0.2 rounded text-[10px] font-label-sm bg-surface-container-low text-outline">Child (6)</span></div><div class="flex flex-wrap items-center gap-2 mt-1 text-[12px] text-on-surface-variant"><span class="inline-flex items-center gap-1 text-secondary"><span class="material-symbols-outlined text-[13px]">child_care</span> Halal Kids Meal</span><span>•</span><span class="text-tertiary font-medium">High Chair Needed</span></div></div><span class="material-symbols-outlined text-[18px] text-secondary">check_circle</span></div></div></section><section class="space-y-2"><h3 class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Arrival &amp; Logistics</h3><div class="bg-surface-container-lowest p-space-md rounded-xl border border-outline-variant shadow-sm space-y-3"><div class="grid grid-cols-2 gap-3 text-body-sm"><div class="bg-surface-container-low/50 p-2.5 rounded-lg"><span class="font-label-sm text-[11px] text-outline block">Day &amp; Date</span><span class="font-label-md text-label-md text-on-surface font-medium">Friday, 11 Dec 2026</span></div><div class="bg-surface-container-low/50 p-2.5 rounded-lg"><span class="font-label-sm text-[11px] text-outline block">Estimated Arrival</span><span class="font-label-md text-label-md text-on-surface font-medium">3:30 PM (Flight PK-785)</span></div></div><div class="flex items-center justify-between p-2.5 bg-surface-container-low/50 rounded-lg"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-secondary">flight_land</span><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface font-medium">Airport Pickup: Yes</span><span class="font-body-sm text-[12px] text-outline">6 passengers with checked luggage</span></div></div><span class="px-2 py-0.5 rounded-full text-label-sm text-label-sm bg-secondary-container text-on-secondary-container font-medium">Flight Arrival</span></div><div class="p-2.5 bg-surface-container-low/50 rounded-lg flex items-center justify-between"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-primary">hotel</span><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface font-medium">2 Suites Reserved</span><span class="font-body-sm text-[12px] text-outline">Grand Mayfair Suite + Deluxe Twin</span></div></div><span class="material-symbols-outlined text-outline text-[18px]">verified</span></div><div class="flex items-center justify-between p-2.5 bg-secondary-container/40 rounded-lg border border-secondary-fixed-dim"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-secondary">directions_car</span><span class="font-label-sm text-label-sm text-on-secondary-container font-medium">Driver Assigned: Tariq Q. (Mercedes Sprinter)</span></div><span class="font-label-sm text-label-sm text-secondary font-semibold">Ready</span></div></div></section><section class="space-y-2"><h3 class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Reminder &amp; Activity History</h3><div class="bg-surface-container-lowest p-space-md rounded-xl border border-outline-variant shadow-sm"><div class="relative pl-6 space-y-4 before:absolute before:left-2 before:top-2 before:bottom-2 before:w-[2px] before:bg-outline-variant"><div class="relative"><span class="absolute -left-6 top-1 w-2.5 h-2.5 rounded-full bg-secondary ring-4 ring-surface-container-lowest"></span><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface font-medium">RSVP Confirmed by Aisha Khan</span><span class="font-body-sm text-[12px] text-on-surface-variant">Via Digital Portal • Confirmed all 6 guests</span><span class="font-code-sm text-[11px] text-outline mt-0.5">Today, 11:42 AM</span></div></div><div class="relative"><span class="absolute -left-6 top-1 w-2.5 h-2.5 rounded-full bg-primary-container ring-4 ring-surface-container-lowest"></span><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface font-medium">Reminder Link Opened</span><span class="font-body-sm text-[12px] text-on-surface-variant">Accessed via WhatsApp personal invite</span><span class="font-code-sm text-[11px] text-outline mt-0.5">Yesterday, 4:15 PM</span></div></div><div class="relative"><span class="absolute -left-6 top-1 w-2.5 h-2.5 rounded-full bg-outline ring-4 ring-surface-container-lowest"></span><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface font-medium">Automated 48-Hour Reminder Sent</span><span class="font-body-sm text-[12px] text-on-surface-variant">Delivered via SMS &amp; WhatsApp broadcast</span><span class="font-code-sm text-[11px] text-outline mt-0.5">Dec 2, 10:00 AM</span></div></div><div class="relative"><span class="absolute -left-6 top-1 w-2.5 h-2.5 rounded-full bg-outline ring-4 ring-surface-container-lowest"></span><div class="flex flex-col"><span class="font-label-md text-label-md text-on-surface font-medium">Digital Invitation Sent</span><span class="font-body-sm text-[12px] text-on-surface-variant">Delivered to primary contact (+1 555-019-2834)</span><span class="font-code-sm text-[11px] text-outline mt-0.5">Nov 24, 2:30 PM</span></div></div></div></div></section></div><div class="p-space-lg border-t border-[#d1c5b5] bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-between gap-3 shrink-0"><button class="flex-1 px-4 py-2.5 rounded-lg border border-outline-variant font-label-md text-label-md text-on-surface hover:bg-surface-container-low transition-colors text-center font-medium" type="button">Edit Party Details</button><button class="flex-1 px-4 py-2.5 rounded-lg bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md shadow-sm hover:shadow-md transition-all text-center font-medium" type="button">Save Changes / Note</button></div></aside></div></main></div></body></html>

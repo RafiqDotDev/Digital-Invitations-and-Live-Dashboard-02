@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"outline-variant":"#d1c5b5","inverse-surface":"#31302b","tertiary-fixed":"#ffdad6","on-primary-fixed":"#271900","tertiary-fixed-dim":"#ffb4ac","primary":"#755a23","secondary":"#3c684a","secondary-fixed":"#bdeec9","error-container":"#ffdad6","surface-variant":"#e6e2da","on-surface":"#1c1c17","background":"#fdf9f1","surface-dim":"#dddad2","surface-container-high":"#ece8e0","tertiary":"#9e403a","outline":"#7f7668","on-secondary-fixed":"#00210e","on-primary-fixed-variant":"#5b430d","surface-container-highest":"#e6e2da","surface-container":"#f1ede6","inverse-primary":"#e6c180","primary-fixed":"#ffdea6","on-secondary-fixed-variant":"#244f34","surface-container-low":"#f7f3eb","on-secondary-container":"#406c4e","on-primary-container":"#453000","surface-tint":"#755a23","secondary-fixed-dim":"#a2d2ae","on-error-container":"#93000a","secondary-container":"#bbebc6","error":"#ba1a1a","surface-bright":"#fdf9f1","on-tertiary-fixed-variant":"#7f2924","on-primary":"#ffffff","surface":"#fdf9f1","on-tertiary-container":"#641613","on-tertiary":"#ffffff","on-tertiary-fixed":"#410002","primary-container":"#b8975a","on-surface-variant":"#4d463a","inverse-on-surface":"#f4f0e8","primary-fixed-dim":"#e6c180","on-secondary":"#ffffff","on-error":"#ffffff","tertiary-container":"#ea7b71","on-background":"#1c1c17","surface-container-lowest":"#ffffff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"1.5rem","space-lg":"1.5rem","gutter-lg":"2rem","margin-mobile":"1rem","margin":"2rem","space-xs":"0.25rem","space-md":"1rem","space-sm":"0.5rem","space-xl":"2.5rem","margin-desktop":"3rem","gutter-sm":"1rem"},"fontFamily":{"headline-lg":["Playfair Display"],"body-sm":["Inter"],"label-sm":["Inter"],"label-md":["Inter"],"body-lg":["Inter"],"headline-xl-mobile":["Playfair Display"],"headline-sm":["Playfair Display"],"headline-md":["Playfair Display"],"headline-xl":["Playfair Display"],"body-md":["Inter"],"display-hero-mobile":["Playfair Display"],"code-sm":["Inter"],"display-hero":["Playfair Display"],"metric-number":["Playfair Display"]},"fontSize":{"headline-lg":["28px",{"lineHeight":"36px","fontWeight":"500"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.05em","fontWeight":"600"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.02em","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"26px","fontWeight":"400"}],"headline-xl-mobile":["26px",{"lineHeight":"34px","fontWeight":"500"}],"headline-sm":["18px",{"lineHeight":"26px","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"30px","fontWeight":"500"}],"headline-xl":["36px",{"lineHeight":"44px","fontWeight":"500"}],"body-md":["14px",{"lineHeight":"22px","fontWeight":"400"}],"display-hero-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"600"}],"code-sm":["12px",{"lineHeight":"16px","fontWeight":"500"}],"display-hero":["48px",{"lineHeight":"56px","letterSpacing":"-0.01em","fontWeight":"600"}],"metric-number":["36px",{"lineHeight":"40px","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[240px] bg-surface-container-lowest z-50 flex flex-col justify-between border-r border-outline-variant shadow-[0_4px_20px_-2px_rgba(184,151,90,0.06)]"><div class="flex flex-col"><div class="h-[72px] px-space-lg flex items-center gap-space-sm border-b border-outline-variant"><img alt="Live Guest Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPy8F2Qpw0zYrHn2vdCGKRYhJ2gmXC5HftKIUWBpO2-HUWwWKdAafIctSN94spx65AnHQqeWA_owtTT0tCJN0SQKbiDXF0tsiHlPSSFVAamDy2GuUlKnIKLUtLISoaaV7I0YmqQalGR9xu2EUbmDlTerIYy52SVe-LAJkb03suICGzHq4SgH4zGnYtwFQTJi4Q4Nqzf1z5Smp_j3JBZradIDxTCjlBDl3Yql8pvduEfbd5MCP1dVhwfw"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight">Live Guest</span></div><nav class="flex flex-col gap-1 px-space-sm py-space-lg" data-active-classes="bg-surface-container-low text-primary-container font-medium"><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all duration-150" data-path="overview" href="#"><span class="font-label-md text-label-md">Overview</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all duration-150" data-path="guests" href="#"><span class="font-label-md text-label-md">Guests</span></a><a aria-current="page" class="relative flex items-center justify-between px-space-md py-2.5 rounded-lg shadow-sm transition-all duration-150 bg-surface-container-low text-primary-container font-medium" data-path="invitation" href="#"><span class="font-label-md text-label-md">Invitation</span><span class="w-1.5 h-4 rounded-full bg-primary-container"></span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all duration-150" data-path="form-settings" href="#"><span class="font-label-md text-label-md">Form settings</span></a><a class="flex items-center gap-space-sm px-space-md py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-all duration-150" data-path="settings" href="#"><span class="font-label-md text-label-md">Settings</span></a></nav></div><div class="p-space-lg border-t border-outline-variant bg-surface-container-low/40"><div class="flex items-center gap-space-sm mb-1 text-primary"><span class="material-symbols-outlined text-[18px]">spa</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Luxury Suite</span></div><p class="font-code-sm text-code-sm text-outline">Live RSVP Engine • v2.4</p></div></aside><div class="pl-[240px]"><header class="fixed top-0 left-[240px] right-0 h-[72px] bg-surface-container-lowest/95 backdrop-blur-md border-b border-outline-variant shadow-[0_1px_3px_0_rgba(43,43,43,0.02)] z-40 px-gutter-lg flex items-center justify-between"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-2 rounded-lg border border-outline-variant cursor-pointer hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-primary text-[20px]">diamond</span><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-medium">Zara &amp; Adam — Sat, Dec 12, 2026</span></div><span class="material-symbols-outlined text-outline text-[18px]">expand_more</span></div><span class="inline-flex items-center px-2.5 py-0.5 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container border border-secondary-fixed-dim"><span class="w-1.5 h-1.5 rounded-full bg-secondary mr-1.5 animate-pulse"></span>Live &amp; Collecting</span></div><div class="flex items-center gap-space-lg"><div class="hidden xl:flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-low border border-outline-variant"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span></span><span class="font-label-sm text-label-sm text-on-surface-variant">RSVP Stream Active</span></div><div class="inline-flex items-center p-0.5 rounded-full bg-surface-container-low border border-outline-variant"><button class="px-2.5 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-primary border border-outline-variant shadow-sm font-semibold" type="button">EN</button><button class="px-2.5 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface transition-colors font-medium" type="button">اردو</button></div><button class="relative p-2 text-on-surface-variant hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-tertiary text-on-tertiary font-label-sm text-[10px]">3</span></button><div class="flex items-center gap-space-sm pl-space-md border-l border-outline-variant"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDiq5LFoucZ14wv2a4nVv5kLX9usyWWQzsAJHU3YnMRv8eONz2tlzH4o2Q1XgL_2wV2mNI9xT_sxV_DbSaIiUMmuYH6AsTRqPs6esnAXwlG9iaeOZLScpCcvsnPfuMSBQpNAdvWpaCA5ATM5VKprmero6op9sDAbb3idvxU5sRXR11bk_ZoAAF9WR-Fu8p0lh-r68nOf7_pj61vzvaeywU0c7_UvW4XD4kHThoHy2UInMKApzDvl-_kLg"/><div class="hidden sm:flex flex-col"><span class="font-label-md text-label-md font-medium text-on-surface leading-none mb-0.5">Sarah Jensen</span><span class="font-label-sm text-label-sm text-outline leading-none">Hall Director</span></div><span class="material-symbols-outlined text-outline text-[18px]">unfold_more</span></div></div></header><main class="w-full pt-[72px] min-h-screen bg-background"><div class="flex flex-col w-full pb-28">
+<!-- Page Subheader & Action Strip -->
+<header class="px-gutter-lg pt-space-lg pb-space-md flex flex-col md:flex-row md:items-end justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-2 mb-1">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary">Invitation Designer &amp; Live Preview</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-outline">v2.4 Live Sync</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface">Digital Invitation Suite</h1>
+<p class="font-body-sm text-body-sm text-outline mt-0.5">
+        Live RSVP URL: <a class="text-primary hover:underline font-label-md text-label-md" href="#">invite.example.com/zara-adam</a>
+<span class="mx-1.5 text-outline-variant">•</span>
+        Last autosaved 2 mins ago
+      </p>
+</div>
+<!-- Actions and Status -->
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="inline-flex items-center px-3 py-1 rounded-full font-label-sm text-label-sm bg-secondary-container text-on-secondary-container">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary mr-2 animate-pulse"></span>
+        Published &amp; Live
+      </span>
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-surface-container-lowest text-primary shadow-sm hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">qr_code_2</span>
+<span class="font-label-md text-label-md">Preview Link / QR</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-on-surface shadow-sm hover:bg-surface-container-low transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">restart_alt</span>
+<span class="font-label-md text-label-md">Reset to Default</span>
+</button>
+</div>
+</header>
+<!-- Main 2-Column Suite Area -->
+<div class="px-gutter-lg grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg mt-space-sm items-start">
+<!-- LEFT COLUMN: Editing Canvas (7 cols on 12-col desktop ~58%) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- SECTION 1: Couple & Headline -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-md mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Couple &amp; Headline</h2>
+<p class="font-body-sm text-body-sm text-outline">Manage formal guest titles and monogram presentation.</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-low text-primary">Step 01</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline" for="bride-name">Bride's Full Name</label>
+<input class="px-3.5 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container" id="bride-name" type="text" value="Zara Malik"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline" for="groom-name">Groom's Full Name</label>
+<input class="px-3.5 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container" id="groom-name" type="text" value="Adam Siddiqui"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline" for="display-title">Display Title Override</label>
+<input class="px-3.5 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container" id="display-title" type="text" value="Zara &amp; Adam"/>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline" for="wedding-date">Wedding Date Display</label>
+<input class="px-3.5 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container" id="wedding-date" type="text" value="Saturday, 12 December 2026"/>
+</div>
+<div class="sm:col-span-2 flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm uppercase tracking-wider text-outline" for="formal-tagline">Formal Invitation Header Tagline</label>
+<input class="px-3.5 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container" id="formal-tagline" type="text" value="Together with their families, invite you to celebrate the marriage of"/>
+</div>
+</div>
+</section>
+<!-- SECTION 2: Our Story -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-md mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">auto_stories</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Our Story</h2>
+<p class="font-body-sm text-body-sm text-outline">Personalized love story shared on the landing fold.</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-low text-primary">Step 02</span>
+</div>
+<div class="rounded-lg bg-surface-container-lowest overflow-hidden">
+<!-- Rich Text Formatting Bar -->
+<div class="flex items-center gap-1 p-2 bg-surface-container-low">
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface" title="Bold" type="button">
+<span class="material-symbols-outlined text-[18px]">format_bold</span>
+</button>
+<button class="p-1.5 rounded bg-surface-container text-primary" title="Italic" type="button">
+<span class="material-symbols-outlined text-[18px]">format_italic</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface" title="Blockquote" type="button">
+<span class="material-symbols-outlined text-[18px]">format_quote</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface" title="Link" type="button">
+<span class="material-symbols-outlined text-[18px]">link</span>
+</button>
+<span class="w-px h-4 bg-outline-variant mx-1"></span>
+<span class="font-code-sm text-code-sm text-outline px-2">Font: Playfair Display Italic</span>
+</div>
+<textarea class="w-full p-space-md font-body-md text-body-md text-on-surface bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary-container leading-relaxed resize-none" rows="4">From our first coffee in Kensington to starlit walks along the Thames, our story has always been about sharing life's gentlest moments. We can't wait to begin this next chapter surrounded by the warmth and prayers of the people who shaped us.</textarea>
+</div>
+</section>
+<!-- SECTION 3: Color Palette & Swatches -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-md mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">palette</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Color Palette &amp; Theme Swatches</h2>
+<p class="font-body-sm text-body-sm text-outline">Atmospheric styling reflected in fonts, monograms, and badges.</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-low text-primary">Step 03</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<!-- Swatch 1 (Active) -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-low shadow-sm cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-8 h-8 rounded-full bg-background overflow-hidden flex items-center justify-center shadow-inner">
+<span class="w-4 h-8 bg-primary absolute right-0"></span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Gilded Grace</span>
+<span class="font-label-sm text-label-sm text-outline">Ivory &amp; Champagne Gold</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<!-- Swatch 2 -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-8 h-8 rounded-full bg-secondary overflow-hidden flex items-center justify-center">
+<span class="w-4 h-8 bg-primary-fixed-dim absolute right-0"></span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Emerald &amp; Brass</span>
+<span class="font-label-sm text-label-sm text-outline">Deep Pine &amp; Antique Gold</span>
+</div>
+</div>
+<span class="w-4 h-4 rounded-full bg-surface-container-high"></span>
+</div>
+<!-- Swatch 3 -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-8 h-8 rounded-full bg-tertiary-fixed overflow-hidden flex items-center justify-center">
+<span class="w-4 h-8 bg-surface-dim absolute right-0"></span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Rose Quartz &amp; Linen</span>
+<span class="font-label-sm text-label-sm text-outline">Muted Blush &amp; Warm Sand</span>
+</div>
+</div>
+<span class="w-4 h-4 rounded-full bg-surface-container-high"></span>
+</div>
+<!-- Swatch 4 -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-colors cursor-pointer">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-8 h-8 rounded-full bg-inverse-surface overflow-hidden flex items-center justify-center">
+<span class="w-4 h-8 bg-surface-container-high absolute right-0"></span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Midnight &amp; Pearl</span>
+<span class="font-label-sm text-label-sm text-outline">Deep Navy &amp; Oyster Silver</span>
+</div>
+</div>
+<span class="w-4 h-4 rounded-full bg-surface-container-high"></span>
+</div>
+</div>
+<div class="mt-space-md pt-space-md flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="w-6 h-6 rounded-full bg-primary-container shadow-sm inline-block"></span>
+<span class="font-label-md text-label-md text-on-surface">Custom Accent Color</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-low px-3 py-1.5 rounded-lg">
+<span class="font-code-sm text-code-sm text-outline">HEX</span>
+<input class="w-20 bg-transparent text-primary font-code-sm text-code-sm uppercase font-semibold focus:outline-none" type="text" value="#B8975A"/>
+</div>
+</div>
+</section>
+<!-- SECTION 4: Photo Gallery & Cover Art -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-md mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">photo_library</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Photo Gallery &amp; Cover Art</h2>
+<p class="font-body-sm text-body-sm text-outline">Featured hero imagery and guest gallery carousel (16:9 or 4:5).</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-low text-primary">4 / 8 Photos</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm">
+<!-- Slot 1: Cover Photo -->
+<div class="relative group rounded-xl overflow-hidden shadow-sm aspect-[3/4] bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="Intimate fine-art wedding editorial photo of couple Zara and Adam in warm golden hour sunlight, laughing softly against an arched stone garden terrace in soft champagne and beige tones with organic greenery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7U6IuGiZEyOs_d9k4lzPRB5DEsE92DRWOwVA2E6IOqvEh6IBM3FGrc3No7QN6CbDj6K-YrpRhUmAz1MH8Lpa5HQnlbrCWjThraObPeKax1b9aWG03ozaNTprbPw-X_snTRO0ZsGavTEsNT7XvY8HkZe7YOYyU8oJ9Pt01zIQDo0GNI18RApu7U8l1LXetwc4lXYefJf70ZiqsGDe7pF77s-2xRL7hvB4glaxafaZGGmH9-ktQXOA4jw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/60 via-transparent to-transparent"></div>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full font-label-sm text-label-sm bg-primary text-on-primary">Cover</span>
+<button class="absolute bottom-2 right-2 p-1.5 rounded-full bg-surface-container-lowest/80 text-on-surface opacity-0 group-hover:opacity-100 transition-opacity" type="button">
+<span class="material-symbols-outlined text-[16px]">edit</span>
+</button>
+</div>
+<!-- Slot 2 -->
+<div class="relative group rounded-xl overflow-hidden shadow-sm aspect-[3/4] bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="Architectural detail of bespoke wedding venue featuring warm stone colonnades, white ranunculus and eucalyptus floral arrangements bathed in gentle amber morning lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmZolNd-oV_GfakCcmawzja48bNVbC4-DqHYbJOsLHUldu7_eosfjZNbxnRYNHrLKFDYAbj5PP7ZjuYEQ8kgYh2Cv-CHU6-2eJ7phQ9YsOjbZFoCT2iMVVmjcrRu7FEHsioycOaqVo3me6aj760FZ_aDWf8uh0r44dqllgGYtiz3nJMzkeRw1-QSl66WRFbwvIFXhaoAsmZOMXESa995TWQHtswp0q0-YWYcyz9uONU9sK__DupPlaMA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<button class="absolute bottom-2 right-2 p-1.5 rounded-full bg-surface-container-lowest/80 text-on-surface opacity-0 group-hover:opacity-100 transition-opacity" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+<!-- Slot 3 -->
+<div class="relative group rounded-xl overflow-hidden shadow-sm aspect-[3/4] bg-surface-container-low">
+<img class="w-full h-full object-cover" data-alt="Close-up luxury bridal gold embroidered veil and modern jewelry details with soft warm focus, romantic cinematic depth of field." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSh3gdNJgAazdAJslTl6PxZjT5yQiS45w2JUV2ArfSAelTw2LOjC9EHyWv0z0HugQ80N4SeqVzL8G8HokRz6BhZz-m3nD3-cLdss2zF5HT4KHDvllnJk6ym96vzMDurq2Ai0F2z8Z_9H7Vo0c5KoBX5LvuaaG3ZzX0ggiN38a1dbO0p-3jdMzv-eypCNdyh7yQDeTPpBKtOR42QzXXr-ETW6ko04r5IngZ16tMFu3tBxop8Wbw931p6A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<button class="absolute bottom-2 right-2 p-1.5 rounded-full bg-surface-container-lowest/80 text-on-surface opacity-0 group-hover:opacity-100 transition-opacity" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+</button>
+</div>
+<!-- Slot 4: Empty Upload -->
+<div class="rounded-xl p-space-sm flex flex-col items-center justify-center text-center aspect-[3/4] bg-surface-container-low/60 hover:bg-surface-container-low transition-colors cursor-pointer group">
+<span class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary mb-2 group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[20px]">add_photo_alternate</span>
+</span>
+<span class="font-label-md text-label-md text-on-surface font-medium">+ Add Photo</span>
+<span class="font-label-sm text-label-sm text-outline mt-0.5">Max 8 (PNG, JPG)</span>
+</div>
+</div>
+</section>
+<!-- SECTION 5: Ambient Music & Sound -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-md mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">music_note</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Ambient Music &amp; Sound</h2>
+<p class="font-body-sm text-body-sm text-outline">Curated musical backdrop activated upon digital invitation open.</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm px-2.5 py-1 rounded-full bg-surface-container-low text-primary">Step 05</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<button class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-sm hover:bg-primary-container transition-colors" type="button">
+<span class="material-symbols-outlined text-[22px]">play_arrow</span>
+</button>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">Canon in D &amp; Sitar Symphony (Acoustic Ensemble)</span>
+<span class="font-label-sm text-label-sm text-outline">Live Instrumental • 03:42 • Master Studio Quality</span>
+</div>
+</div>
+<button class="font-label-sm text-label-sm text-primary hover:underline self-start md:self-auto" type="button">
+            Change Track
+          </button>
+</div>
+<div class="mt-space-md flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<label class="flex items-center gap-3 cursor-pointer">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary-container" type="checkbox"/>
+<span class="font-body-md text-body-md text-on-surface">Autoplay muted with guest tap prompt</span>
+</label>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-outline text-[18px]">volume_down</span>
+<div class="w-28 h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="w-3/4 h-full bg-primary"></div>
+</div>
+<span class="material-symbols-outlined text-outline text-[18px]">volume_up</span>
+</div>
+</div>
+</section>
+<!-- SECTION 6: Event Itinerary (Reorderable) -->
+<section class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<div class="flex items-center justify-between pb-space-md mb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Event Itinerary (3 Celebrations)</h2>
+<p class="font-body-sm text-body-sm text-outline">Drag to reorder ceremonial timeline across the wedding weekend.</p>
+</div>
+</div>
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container text-primary font-label-md text-label-md hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+            Add Event
+          </button>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Event Item 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low/50 transition-colors shadow-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-outline cursor-grab pt-1">drag_indicator</span>
+<div class="flex-1 grid grid-cols-1 sm:grid-cols-3 gap-2">
+<div class="sm:col-span-1">
+<span class="font-headline-sm text-headline-sm text-on-surface block">Welcome Dinner</span>
+<span class="font-label-sm text-label-sm text-primary mt-0.5 block">Dec 11, 2026 • 7:30 PM</span>
+</div>
+<div class="sm:col-span-2 flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+<span>Grand Terrace, Mayfair</span>
+<a class="text-primary hover:underline ml-1 font-code-sm text-code-sm" href="https://maps.google.com/?q=grand+terrace" target="_blank">Map</a>
+</div>
+<div class="flex items-center gap-1.5 text-outline font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">checkroom</span>
+<span>Dress Code: Smart Traditional / Cocktail</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1.5 text-outline hover:text-on-surface transition-colors" title="Edit" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 text-outline hover:text-tertiary transition-colors" title="Remove" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Event Item 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low/50 transition-colors shadow-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-outline cursor-grab pt-1">drag_indicator</span>
+<div class="flex-1 grid grid-cols-1 sm:grid-cols-3 gap-2">
+<div class="sm:col-span-1">
+<span class="font-headline-sm text-headline-sm text-on-surface block">The Ceremony</span>
+<span class="font-label-sm text-label-sm text-primary mt-0.5 block">Dec 12, 2026 • 11:30 AM</span>
+</div>
+<div class="sm:col-span-2 flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+<span>The Sunken Pavilion &amp; Lawn</span>
+<a class="text-primary hover:underline ml-1 font-code-sm text-code-sm" href="https://maps.google.com/?q=sunken+pavilion" target="_blank">Map</a>
+</div>
+<div class="flex items-center gap-1.5 text-outline font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">checkroom</span>
+<span>Dress Code: Formal Pastel / Traditional</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1.5 text-outline hover:text-on-surface transition-colors" title="Edit" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 text-outline hover:text-tertiary transition-colors" title="Remove" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+<!-- Event Item 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low/50 transition-colors shadow-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-outline cursor-grab pt-1">drag_indicator</span>
+<div class="flex-1 grid grid-cols-1 sm:grid-cols-3 gap-2">
+<div class="sm:col-span-1">
+<span class="font-headline-sm text-headline-sm text-on-surface block">Ballroom Reception</span>
+<span class="font-label-sm text-label-sm text-primary mt-0.5 block">Dec 12, 2026 • 6:00 PM</span>
+</div>
+<div class="sm:col-span-2 flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-outline">location_on</span>
+<span>Grand Ballroom, The Rose Glasshouse</span>
+<a class="text-primary hover:underline ml-1 font-code-sm text-code-sm" href="https://maps.google.com/?q=rose+glasshouse" target="_blank">Map</a>
+</div>
+<div class="flex items-center gap-1.5 text-outline font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">checkroom</span>
+<span>Dress Code: Black Tie &amp; Elegant Ethnic</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-1">
+<button class="p-1.5 text-outline hover:text-on-surface transition-colors" title="Edit" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1.5 text-outline hover:text-tertiary transition-colors" title="Remove" type="button">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- RIGHT COLUMN: Sticky Real-Time Phone Preview (5 cols on desktop ~42%) -->
+<div class="lg:col-span-5 sticky top-[92px] flex flex-col items-center">
+<!-- Device View Controls -->
+<div class="w-full max-w-[380px] mb-space-sm flex items-center justify-between">
+<div class="inline-flex p-1 rounded-full bg-surface-container-low">
+<button class="px-3 py-1 rounded-full font-label-sm text-label-sm bg-surface-container-lowest text-primary font-semibold shadow-sm" type="button">
+            iPhone 15 Pro
+          </button>
+<button class="px-3 py-1 rounded-full font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface" type="button">
+            Mobile Web
+          </button>
+</div>
+<a class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary hover:underline" href="#">
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+          Open Live View
+        </a>
+</div>
+<!-- Smartphone Hardware Frame -->
+<div class="relative w-full max-w-[380px] h-[740px] bg-inverse-surface rounded-[48px] p-3 shadow-2xl ring-1 ring-primary-container/20">
+<!-- Screen Outer Rim -->
+<div class="relative w-full h-full bg-background rounded-[40px] overflow-hidden flex flex-col">
+<!-- Dynamic Island / Top Speaker -->
+<div class="absolute top-2.5 left-1/2 -translate-x-1/2 w-24 h-5 bg-inverse-surface rounded-full z-30 flex items-center justify-end pr-2">
+<span class="w-2.5 h-2.5 rounded-full bg-[#111111] ring-1 ring-white/10"></span>
+</div>
+<!-- Phone Inner Scrollable Content -->
+<div class="w-full h-full overflow-y-auto px-4 pt-10 pb-16 flex flex-col items-center text-center">
+<!-- Delicate Botanical Floral Vector Accent -->
+<div class="w-16 h-8 text-primary opacity-60 mb-2">
+<svg class="w-full h-full" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 100 40">
+<path d="M10,20 Q30,5 50,20 Q70,5 90,20 M50,20 L50,35 M45,28 Q50,23 55,28" stroke-linecap="round"></path>
+</svg>
+</div>
+<!-- Monogram Seal -->
+<div class="w-11 h-11 rounded-full bg-surface-container-low flex items-center justify-center text-primary font-headline-sm text-headline-sm mb-3 shadow-sm">
+              Z &amp; A
+            </div>
+<!-- Tagline -->
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline mb-1">
+              Together With Their Families
+            </span>
+<!-- Couple Names -->
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight mb-2">
+              Zara &amp; Adam
+            </h2>
+<span class="font-body-sm text-body-sm text-on-surface-variant max-w-[260px] mb-4 italic">
+              Saturday, Twelfth of December, Two Thousand Twenty-Six<br/>
+              The Glasshouse Pavilion, London
+            </span>
+<!-- Couple Portrait Card with Gold Frame -->
+<div class="w-full rounded-2xl overflow-hidden shadow-md p-1 bg-surface-container-lowest mb-5">
+<div class="rounded-xl overflow-hidden aspect-[4/3] relative">
+<img class="w-full h-full object-cover" data-alt="Bespoke luxury wedding portrait of Zara and Adam in couture emerald and gold attire, smiling warmly in a candlelit conservatory filled with white jasmine." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMLVnDy9UEyxcLk0WWpY23f7aAuxrjpu2sFzn2hmwQCEwxYdrlHRjmizQ0KMApT3TvY7p3FCNeMDaJIUfVqwZgYDtjdyZU-gVOjY2Rro8ip8uJ_DDi5Rz72i6OKHzU3wtKfdsOP-vUKHsqJQPtHpI_0nxQznbWB07LMaFZJUmvTnG8H1fYo-KC3szZ0m7Ti_jhMDswtiOt9Nf4O_H0oZfBadmXv1mCUOa5uLb7g5ws_zbLL5MJNuMy_g"/>
+</div>
+</div>
+<!-- Our Story Section in Phone -->
+<div class="w-full bg-surface-container-lowest/80 backdrop-blur-sm rounded-xl p-3.5 mb-4 shadow-sm text-left">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary block mb-1">Our Story</span>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed italic font-headline-sm">
+                “From our first coffee in Kensington to starlit walks along the Thames, our story has always been about sharing life's gentlest moments...”
+              </p>
+</div>
+<!-- Timeline Capsules -->
+<div class="w-full flex flex-col gap-2 mb-6 text-left">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline px-1">Weekend Schedule</span>
+<div class="p-2.5 rounded-lg bg-surface-container-lowest flex items-center justify-between shadow-sm">
+<div>
+<span class="font-label-md text-label-md text-on-surface font-semibold block">Welcome Dinner</span>
+<span class="font-body-sm text-body-sm text-outline">Dec 11 • 7:30 PM • Grand Terrace</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-low text-primary">Cocktail</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-lowest flex items-center justify-between shadow-sm">
+<div>
+<span class="font-label-md text-label-md text-on-surface font-semibold block">The Ceremony</span>
+<span class="font-body-sm text-body-sm text-outline">Dec 12 • 11:30 AM • Sunken Pavilion</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container">Nikah</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-lowest flex items-center justify-between shadow-sm">
+<div>
+<span class="font-label-md text-label-md text-on-surface font-semibold block">Grand Reception</span>
+<span class="font-body-sm text-body-sm text-outline">Dec 12 • 6:00 PM • Crystal Ballroom</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-surface-container-low text-primary">Black Tie</span>
+</div>
+</div>
+<!-- RSVP Call To Action -->
+<button class="w-full py-3 rounded-xl bg-primary text-on-primary font-headline-sm text-headline-sm shadow-md hover:bg-primary-container transition-transform active:scale-95 mb-6" type="button">
+              RSVP to Celebrate With Us
+            </button>
+<!-- Bottom Floating Equalizer Indicator -->
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-lowest/90 backdrop-blur-md shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">graphic_eq</span>
+<span class="font-label-sm text-label-sm text-on-surface">Canon in D &amp; Sitar</span>
+<div class="flex items-end gap-0.5 h-3">
+<span class="w-0.5 h-2 bg-primary rounded-full animate-bounce"></span>
+<span class="w-0.5 h-3 bg-primary rounded-full animate-pulse"></span>
+<span class="w-0.5 h-1.5 bg-primary rounded-full animate-bounce"></span>
+</div>
+</div>
+</div>
+<!-- Home Indicator Pill -->
+<div class="absolute bottom-2 left-1/2 -translate-x-1/2 w-32 h-1 bg-outline rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Sticky Bottom Global Action Bar for Editor -->
+<div class="fixed bottom-0 left-[240px] right-0 bg-surface-container-lowest/95 backdrop-blur-md px-gutter-lg py-space-sm shadow-[0_-4px_20px_-2px_rgba(43,43,43,0.06)] z-30 flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-2 text-on-surface font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span>Unsaved changes: Event itinerary dress code updated</span>
+</div>
+<button class="font-label-md text-label-md text-outline hover:text-on-surface transition-colors underline" type="button">
+        Discard
+      </button>
+</div>
+<div class="flex items-center gap-space-sm">
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-surface-container-lowest text-primary hover:bg-surface-container-low transition-colors shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span class="font-label-md text-label-md">Send Test to WhatsApp</span>
+</button>
+<button class="inline-flex items-center gap-2 px-6 py-2 rounded-lg bg-primary-container text-on-primary font-medium shadow-sm hover:opacity-95 transition-opacity" type="button">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span class="font-label-md text-label-md font-medium">Save Changes</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  // Simple interaction for responsive live sync simulation
+  document.getElementById('bride-name')?.addEventListener('input', (e) => {
+    const groom = document.getElementById('groom-name')?.value || 'Adam';
+    const displayOverride = document.getElementById('display-title');
+    if (displayOverride) {
+      displayOverride.value = `${e.target.value} & ${groom}`;
+    }
+  });
+</script></main></div></body></html>

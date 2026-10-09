@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #755a23;
+  --color-primary-container: #b8975a;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #453000;
+  --color-primary-fixed: #ffdea6;
+  --color-primary-fixed-dim: #e6c180;
+  --color-on-primary-fixed: #271900;
+  --color-on-primary-fixed-variant: #5b430d;
+  --color-inverse-primary: #e6c180;
+
+  --color-secondary: #3c684a;
+  --color-secondary-container: #bbebc6;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #406c4e;
+  --color-secondary-fixed: #bdeec9;
+  --color-secondary-fixed-dim: #a2d2ae;
+  --color-on-secondary-fixed: #00210e;
+  --color-on-secondary-fixed-variant: #244f34;
+
+  --color-tertiary: #9e403a;
+  --color-tertiary-container: #ea7b71;
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-container: #641613;
+  --color-tertiary-fixed: #ffdad6;
+  --color-tertiary-fixed-dim: #ffb4ac;
+  --color-on-tertiary-fixed: #410002;
+  --color-on-tertiary-fixed-variant: #7f2924;
+
+  --color-error: #ba1a1a;
+  --color-error-container: #ffdad6;
+  --color-on-error: #ffffff;
+  --color-on-error-container: #93000a;
+
+  --color-surface: #fdf9f1;
+  --color-surface-dim: #dddad2;
+  --color-surface-bright: #fdf9f1;
+  --color-surface-variant: #e6e2da;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f7f3eb;
+  --color-surface-container: #f1ede6;
+  --color-surface-container-high: #ece8e0;
+  --color-surface-container-highest: #e6e2da;
+
+  --color-background: #fdf9f1;
+  --color-on-background: #1c1c17;
+  --color-on-surface: #1c1c17;
+  --color-on-surface-variant: #4d463a;
+  --color-inverse-surface: #31302b;
+  --color-inverse-on-surface: #f4f0e8;
+  --color-outline: #7f7668;
+  --color-outline-variant: #d1c5b5;
+  --color-surface-tint: #755a23;
+
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display-hero: "Playfair Display", Georgia, serif;
+  --font-headline-xl: "Playfair Display", Georgia, serif;
+  --font-headline-lg: "Playfair Display", Georgia, serif;
+  --font-headline-md: "Playfair Display", Georgia, serif;
+  --font-headline-sm: "Playfair Display", Georgia, serif;
+  --font-metric-number: "Playfair Display", Georgia, serif;
+  --font-body-lg: "Inter", sans-serif;
+  --font-body-md: "Inter", sans-serif;
+  --font-body-sm: "Inter", sans-serif;
+  --font-label-md: "Inter", sans-serif;
+  --font-label-sm: "Inter", sans-serif;
+  --font-code-sm: "Inter", monospace;
+
+  --spacing-gutter: 1.5rem;
+  --spacing-gutter-sm: 1rem;
+  --spacing-gutter-lg: 2rem;
+  --spacing-margin: 2rem;
+  --spacing-margin-mobile: 1rem;
+  --spacing-margin-desktop: 3rem;
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.5rem;
+  --spacing-space-xl: 2.5rem;
+}
+
+@layer base {
+  html,
+  body {
+    background-color: var(--color-background);
+    color: var(--color-on-surface);
+    font-family: var(--font-sans);
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* Material Symbols font setup */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbars */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
